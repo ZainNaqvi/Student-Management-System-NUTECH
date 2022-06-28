@@ -3,7 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nsdd/customInputDecoration.dart';
 import 'package:nsdd/pages/applyiedCourses.dart';
+import 'package:nsdd/pages/favouriteCourses.dart';
 import 'package:nsdd/pages/forgot.dart';
+import 'package:nsdd/pages/profile.dart';
 import 'package:nsdd/pages/signup.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -163,6 +165,18 @@ class _LoginScreenState extends State<LoginScreen> {
                           builder: (context) => AppliedCourses()));
                     },
                     child: Text("Applied Screen")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => FavoutieCourses()));
+                    },
+                    child: Text("Favorite Courses Screen")),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => ProfileScreen()));
+                    },
+                    child: Text("Profile Screen")),
               ],
             ),
           ),

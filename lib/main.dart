@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:nsdd/pages/login_page.dart';
-import 'package:nsdd/pages/profile_page.dart';
 
 import 'utils/routes.dart';
 import 'utils/theme.dart';
