@@ -9,6 +9,10 @@ const Color kLightPlaceholderText = Color(0xFFC6CAD3);
 const Color kLightBackground = Color(0xFFFFFFFF);
 const Color kLightError = Color(0xFFFF7971);
 
+// primary color of the aplication in nsdd
+const Color kPrimaryColor = Color(0xFF8B010B);
+// k dark themes colors
+
 const Color kDarkPrimary = Color(0xFF4CC49B);
 const Color kDarkAccent = Color(0xFF4CC49B);
 const Color kDarkTextColor = Colors.white;

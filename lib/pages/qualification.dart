@@ -90,10 +90,7 @@ class _QualificationScreenState extends State<QualificationScreen> {
                     alignment: Alignment.topLeft,
                     child: Text(
                       "Qualification ",
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline2!
-                          .copyWith(fontWeight: FontWeight.bold),
+                      style: Theme.of(context).textTheme.headline1,
                     ),
                   ),
 
@@ -133,7 +130,7 @@ class _QualificationScreenState extends State<QualificationScreen> {
                   ),
                   CTextFormField(
                     prefixIcon: Icon(Icons.school),
-                    controller: _userTotalMarks,
+                    controller: _userObtainedMarks,
                     hintText: 'Obtained Marks',
                   ),
                   SizedBox(

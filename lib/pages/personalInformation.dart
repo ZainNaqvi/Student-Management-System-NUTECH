@@ -157,10 +157,7 @@ class _PersonalInfomationState extends State<PersonalInfomation> {
                   alignment: Alignment.topLeft,
                   child: Text(
                     "Personal Infomation",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline2!
-                        .copyWith(fontWeight: FontWeight.bold),
+                    style: Theme.of(context).textTheme.headline2,
                   ),
                 ),
 
@@ -503,7 +500,7 @@ class _PersonalInfomationState extends State<PersonalInfomation> {
                       },
                       child: Text(
                         "Sign In",
-                        style: TextStyle(color: Colors.white),
+                        style: Theme.of(context).textTheme.headline4,
                       ),
                     ),
                   ],

@@ -25,11 +25,6 @@ class CTextFormField extends StatelessWidget {
         prefixIcon: prefixIcon,
         hintText: hintText,
         suffixIcon: suffixIcon,
-        hintStyle: TextStyle(
-          color: Theme.of(context).canvasColor,
-          fontSize: 14.sp,
-          fontWeight: FontWeight.w500,
-        ),
       ),
     );
   }

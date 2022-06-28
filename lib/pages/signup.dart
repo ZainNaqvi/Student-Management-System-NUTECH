@@ -71,7 +71,7 @@ class _SignUpState extends State<SignUp> {
                   alignment: Alignment.topLeft,
                   child: Text(
                     "Sign Up",
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.headline1,
                   ),
                 ),
 

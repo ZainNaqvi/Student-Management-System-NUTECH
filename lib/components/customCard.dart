@@ -8,7 +8,8 @@ Padding card(BuildContext context) {
     child: Container(
       width: double.infinity,
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(10.r)),
+          color: Theme.of(context).cardColor,
+          borderRadius: BorderRadius.circular(10.r)),
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
         child: Column(
@@ -20,7 +21,7 @@ Padding card(BuildContext context) {
             ),
             Text(
               "International Islamic University Islamabad",
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.subtitle1,
             ),
             SizedBox(
               height: 16.h,

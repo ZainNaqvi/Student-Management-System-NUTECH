@@ -9,11 +9,11 @@ Row stactics(
     children: [
       Text(
         title,
-        style: Theme.of(context).textTheme.headline4,
+        style: Theme.of(context).textTheme.subtitle1,
       ),
       Text(
         value,
-        style: Theme.of(context).textTheme.headline4,
+        style: Theme.of(context).textTheme.subtitle1,
       ),
     ],
   );

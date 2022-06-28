@@ -37,20 +37,23 @@ final Map<AppTheme, ThemeData> appThemeData = {
         color: Colors.black,
       ),
     ),
+    cardColor: kDarkTextColor,
     primaryColor: kDarkPrimary,
     scaffoldBackgroundColor: kDarkBackground,
     backgroundColor: kDarkPlaceholder,
     errorColor: kDarkError,
     textTheme: GoogleFonts.poppinsTextTheme(
       const TextTheme().copyWith(
-        caption: TextStyle(color: Colors.black),
+        caption: TextStyle(color: Colors.white),
         headline1: TextStyle(
           fontSize: 48.sp,
           color: kDarkTextColor,
+          fontWeight: FontWeight.bold,
         ),
         headline2: TextStyle(
           fontSize: 32.sp,
           color: kDarkTextColor,
+          fontWeight: FontWeight.bold,
         ),
         headline3: TextStyle(
           fontSize: 24.sp,
@@ -59,7 +62,8 @@ final Map<AppTheme, ThemeData> appThemeData = {
         ),
         headline4: TextStyle(
           fontSize: 12.sp,
-          color: Colors.black,
+          color: kDarkTextColor,
+          fontWeight: FontWeight.bold,
         ),
         headline5: TextStyle(
           fontSize: 20.sp,
@@ -77,8 +81,13 @@ final Map<AppTheme, ThemeData> appThemeData = {
           fontSize: 14.sp,
           color: kDarkTextColor,
         ),
+        subtitle1: TextStyle(
+          color: kLightTextColor,
+          fontSize: 12.sp,
+          fontWeight: FontWeight.w500,
+        ),
         subtitle2: TextStyle(
-          color: Colors.black,
+          color: kLightTextColor,
           fontSize: 16.sp,
           fontWeight: FontWeight.bold,
         ),
@@ -145,28 +154,33 @@ final Map<AppTheme, ThemeData> appThemeData = {
         vertical: 20.h,
       ),
     ),
+    cardColor: kDarkPlaceholder,
     primaryColor: kLightPrimary,
     scaffoldBackgroundColor: kLightBackground,
     backgroundColor: kLightPlaceholder,
     errorColor: kLightError,
     textTheme: GoogleFonts.openSansTextTheme(
       const TextTheme().copyWith(
+        caption: TextStyle(color: Colors.black),
         headline1: TextStyle(
           fontSize: 48.sp,
-          color: kLightTextColor,
+          color: kPrimaryColor,
+          fontWeight: FontWeight.bold,
         ),
         headline2: TextStyle(
           fontSize: 32.sp,
-          color: kLightTextColor,
+          color: kPrimaryColor,
+          fontWeight: FontWeight.bold,
         ),
         headline3: TextStyle(
           fontSize: 24.sp,
-          color: kLightTextColor,
+          color: kPrimaryColor,
           fontWeight: FontWeight.bold,
         ),
         headline4: TextStyle(
-          fontSize: 24.sp,
+          fontSize: 12.sp,
           color: kLightTextColor,
+          fontWeight: FontWeight.bold,
         ),
         headline5: TextStyle(
           fontSize: 20.sp,
@@ -183,6 +197,16 @@ final Map<AppTheme, ThemeData> appThemeData = {
         bodyText2: TextStyle(
           fontSize: 14.sp,
           color: kLightTextColor,
+        ),
+        subtitle1: TextStyle(
+          color: kDarkTextColor,
+          fontSize: 12.sp,
+          fontWeight: FontWeight.w500,
+        ),
+        subtitle2: TextStyle(
+          color: kDarkTextColor,
+          fontSize: 16.sp,
+          fontWeight: FontWeight.bold,
         ),
       ),
     ),

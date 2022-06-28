@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nsdd/customInputDecoration.dart';
+import 'package:nsdd/pages/applyiedCourses.dart';
 import 'package:nsdd/pages/forgot.dart';
 import 'package:nsdd/pages/signup.dart';
 
@@ -51,8 +52,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 Align(
                   alignment: Alignment.topLeft,
                   child: Text(
-                    "Login",
-                    style: Theme.of(context).textTheme.headline2,
+                    "Sign in",
+                    style: Theme.of(context).textTheme.headline1,
                   ),
                 ),
 
@@ -60,7 +61,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 15.h,
                 ),
                 TextFormField(
-                  style: Theme.of(context).textTheme.caption,
                   controller: _userEmailController,
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.next,
@@ -78,7 +78,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 // Feild 2
 
                 TextFormField(
-                  style: Theme.of(context).textTheme.caption,
                   controller: _userPasswordController,
                   obscureText: isObscure,
                   keyboardType: TextInputType.visiblePassword,
@@ -158,6 +157,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ],
                 ),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => AppliedCourses()));
+                    },
+                    child: Text("Applied Screen")),
               ],
             ),
           ),
